@@ -13,13 +13,13 @@ import { useEffect } from "react";
 const AppRouter = () => {
     const { startLogin ,status } = useAuthStore();
 
-    useEffect(() => {
+    /* useEffect(() => {
         const activeAccount = async () => {
             await startLogin();
         }
 
         activeAccount();
-    }, []);
+    }, []); */
 
 
     if (status === 'checking') {
