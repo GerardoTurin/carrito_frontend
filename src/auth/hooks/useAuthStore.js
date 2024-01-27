@@ -67,7 +67,8 @@ const useAuthStore = () => {
 
             dispatch( onLogin({ name: data.user.name, uid: data.user._id, photo: data.user.photo, money: data.user.availableMoney }) );
             navigate('/shop');
-            toast.success( `Bienvenido ${ data.user.name }.` );
+            toast.success( `Bienvenido` );
+            return data;
 
         } catch (error) {
             console.log(error);
